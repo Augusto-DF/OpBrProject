@@ -1,0 +1,37 @@
+.menu {
+  height: 80px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  font-family: var(--type-fontstyle-main);
+  font-size: var(--type-fontsize-medium);
+
+  text-transform: uppercase;
+}
+
+.menu a {
+  width: 120px;
+  text-decoration: none;
+  margin-right: 20px;
+  color: #00004d;
+}
+
+.menu a:hover {
+  transition: 0.4s;
+  color: #4d4dff;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #00004d;
+  transition: 0.4s;
+}
+
+.menu a.marked::after {
+  width: 110px;
+}

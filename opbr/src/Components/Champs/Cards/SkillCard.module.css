@@ -1,0 +1,26 @@
+.wrapper {
+  width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 940px) {
+  .imgBlock img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .statsBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statsBlock .cost,
+  .statsBlock .range {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 0px;
+    margin-left: 16px;
+  }
+}

@@ -1,0 +1,14 @@
+fontStyle {
+  --type-fontstyle-main: 'Raleway', Helvetica, Arial, sans-serif;
+  --type-fontstyle-second: 'Spectral', Georgia, serif;
+}
+
+fontSize {
+  --type-fontsize-small: 12px;
+  --type-fontsize-medium: 16px;
+  --type-fontsize-medium: 20px;
+}
+/* Dark Normal Light*/
+fontColor {
+  --type-fontcolor-bluedark: red;
+}

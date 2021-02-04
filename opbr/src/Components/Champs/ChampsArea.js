@@ -2,7 +2,7 @@ import React from 'react';
 import { ChampsContext } from '../../Contexts/ChampsContext';
 import ChampCard_Medium from './Cards/ChampCard_Medium';
 import ChampDetails from './ChampDetails';
-import { GET_CHAMPS } from '../../API/api';
+import { GET_CHAMP } from '../../API/api';
 
 const URL_IMG = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading';
 
@@ -14,7 +14,7 @@ const ChampsArea = () => {
   const [champTarget, setChampTarget] = React.useState(null);
 
   async function choosedChamp() {
-    const { url, options } = GET_CHAMPS(champTarget);
+    const { url, options } = GET_CHAMP(champTarget);
     const response = await fetch(url, options);
     const json = await response.json();
     setChampDetails(json);
