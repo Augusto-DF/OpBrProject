@@ -14,12 +14,12 @@
   width: 120px;
   text-decoration: none;
   margin-right: 20px;
-  color: #00004d;
+  color: #cccccc;
 }
 
 .menu a:hover {
   transition: 0.4s;
-  color: #4d4dff;
+  color: #cccfff;
 }
 
 .menu a::after {
@@ -28,7 +28,7 @@
   width: 0px;
   height: 2px;
   border-radius: 2px;
-  background-color: #00004d;
+  background-color: #cccccc;
   transition: 0.4s;
 }
 
